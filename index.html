@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Intro with Navigation | Crio.do</title>
+</head>
+<body>
+
+  <div class="overlay" id="overlay"></div>
+
+  <header>
+    <div class="nav-left">
+      <img src="./assets/images/logo.svg" class="logo" alt="snap's logo">
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link">
+              Features <img src="./assets/images/icon-arrow-down.svg" class="arrow" alt="">
+            </button>
+            <ul class="dropdown-list dropdown-features">
+              <li class="dropdown-link">
+                <a href="#" aria-label="todo-list">
+                  <img src="./assets/images/icon-todo.svg" alt=""> Todo List
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="calendar">
+                  <img src="./assets/images/icon-calendar.svg" alt=""> Calendar
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="reminders">
+                  <img src="./assets/images/icon-reminders.svg" alt=""> Reminders
+                </a>
+              </li>
+              <li class="dropdown-link">
+                <a href="#" aria-label="planning">
+                  <img src="./assets/images/icon-planning.svg" alt=""> Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link">
+              Company <img src="./assets/images/icon-arrow-down.svg" class="arrow" alt="">
+            </button>
+            <ul class="dropdown-list dropdown-company">
+              <li class="dropdown-link"><a href="#">History</a></li>
+              <li class="dropdown-link"><a href="#">Our Team</a></li>
+              <li class="dropdown-link"><a href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><button class="nav-link plain">Careers</button></li>
+          <li class="nav-item"><button class="nav-link plain">About</button></li>
+        </ul>
+
+        <div class="registration mobile-auth">
+          <button class="btn login">Login</button>
+          <button class="btn register">Register</button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="registration nav-auth">
+      <button class="btn login">Login</button>
+      <button class="btn register">Register</button>
+    </div>
+
+    <button class="open-menu" id="menu-btn" aria-label="Open menu">
+      <img src="./assets/images/icon-menu.svg" alt="open menu">
+    </button>
+    <button class="close-menu hidden" id="close-btn" aria-label="Close menu">
+      <img src="./assets/images/icon-close-menu.svg" alt="close menu">
+    </button>
+  </header>
+
+  <main>
+    <section class="text-content">
+      <h1>Make  remote<br class="desktop-break"> work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button class="btn learn-more">Learn more</button>
+      <div class="clients">
+        <img src="./assets/images/client-databiz.svg" alt="databiz">
+        <img src="./assets/images/client-audiophile.svg" alt="audiophile">
+        <img src="./assets/images/client-meet.svg" alt="meet">
+        <img src="./assets/images/client-maker.svg" alt="maker">
+      </div>
+    </section>
+
+    <div class="picture">
+      <picture>
+        <source srcset="./assets/images/image-hero-desktop.png" media="(min-width: 769px)">
+        <img src="./assets/images/image-hero-mobile.png" alt="Hero">
+      </picture>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://crio.do" target="_blank">Crio.Do</a>
+    Coded by <a href="https://github.com/Ayush-97techyboy" target="_blank">Ayush Mishra</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
